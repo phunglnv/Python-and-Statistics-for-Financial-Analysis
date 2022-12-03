@@ -53,16 +53,7 @@ To make sure the model is consistent in future data, current data need to be spl
 Stock data is very noisy comparing to other static data like images. We will use the equal size of samples for both train and test. 
 
 We assign 500 days at the test data and 500 days before the test at the training data. 
-## (2) Data Splitting
-To make sure the model is consistent in future data, current data need to be split into 2 parts: 
-- One is for building the model
-- The other part is for testing the model to see if the model can still make reasonable prediction in this dataset 
 
-![Capture 3](https://user-images.githubusercontent.com/105278875/204293295-7fe7c133-b8d2-4483-976e-4c92c39598e8.PNG)
-
-Stock data is very noisy comparing to other static data like images. We will use the equal size of samples for both train and test. 
-
-We assign 500 days at the test data and 500 days before the test at the training data. 
 ## (3) Explore the train data set
 - Use the scatter matrix to get a pairwise scatterplot.
 - From the output, we find that the predictors for Asian and European markets do have association with SPY, which have higher impacts than predictors of U.S. markets. 
@@ -75,10 +66,12 @@ We assign 500 days at the test data and 500 days before the test at the training
 
 - P-value for F-statistics = 2.16e-14 < 0.05, which indicates we rejects H0 and shows that our model includes useful predictors. 
 - P-value of Aord = 0 means most of the predictors are not significant, except Aord. Another way to say is all other predictors are useless information of SPY. It may be because of multicollinarity.
+
 ## (5) Make Prediction
 As the scatter chart shown, it does have positive correlation.
 
 ![Capture 7](https://user-images.githubusercontent.com/105278875/204294056-0e8ba202-62db-4723-a099-88be18754f5f.PNG)
+
 ## (6) Model  Evaluation
 We can evaluate the model by comparing 2 statistics in train and test. <br>
 We can measure the performance of our model using some statistical metrics 
