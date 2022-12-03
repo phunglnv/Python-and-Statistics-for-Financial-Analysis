@@ -1,5 +1,5 @@
 
-# Using Python to Predict the stock market 
+# Using Python to Predict the market 
 
 
 
